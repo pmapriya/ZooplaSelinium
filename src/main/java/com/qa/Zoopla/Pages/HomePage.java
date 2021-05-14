@@ -1,7 +1,9 @@
 package com.qa.Zoopla.Pages;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.qa.Zoopla.Base.Browser;
 
@@ -11,6 +13,14 @@ import com.qa.Zoopla.Base.Browser;
 
 public class HomePage extends Browser
 {
+	
+	//static WebDriver driver;
+	
+	public HomePage()
+	{
+		PageFactory.initElements(driver,this);
+	}
+	
 
 	//Page Factory
 	@FindBy(xpath="//input[@id='gosuggest_inputSrc']")		//start location web element
@@ -73,5 +83,45 @@ public class HomePage extends Browser
 	@FindBy(xpath = "//input[@id='student_fare_check']")    				//Student Fare checkbox
 	WebElement studentFareCheckBox;
 	
+//	public static String homepageTitle()
+//	{
+//		String title= driver.getTitle();
+//		return title;
+//	}
+
+	public String homepageTitle() 
+	{
+		String title= driver.getTitle();
+		return title;
+	}
 	
+	public void checkStudentFare()
+	{
+		studentFareCheckBox.click();
+	}
+	
+	//this method should return false, as student bar should not be selected by default
+	public boolean studentFareNotSelected()
+	{
+		return studentFareCheckBox.isSelected();
+	}
+	
+	// method to enter start loaction
+	public void enterStartLocation(String startLocation)
+	{
+		from.sendKeys(startLocation);
+	}
+	
+	//method to enter destination address
+	public void enterDestinationLocation(String destinationLocation)
+	{
+		destination.sendKeys(destinationLocation);
+	}
+	
+	public void enterDepartureDate(String startDate)
+	{
+		departureDate.sendKeys(startDate);
+	}
+	
+
 }

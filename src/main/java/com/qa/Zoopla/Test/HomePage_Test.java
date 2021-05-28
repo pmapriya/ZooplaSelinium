@@ -38,7 +38,7 @@ public class HomePage_Test extends Browser
 	@Test
 	public void studentBarIsNotSelectedValidation()
 	{
-		boolean flag = hp.studentFareNotSelected(); // flag value should be false, as by defualt student bar should not be selected
+		boolean flag = hp.studentFareNotSelected(); // flag value should be false, as by default student bar should not be selected
 		Assert.assertEquals(flag, false);
 	}
 	

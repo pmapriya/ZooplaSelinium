@@ -14,17 +14,18 @@ import com.qa.Zoopla.Base.Browser;
 public class HomePage extends Browser
 {
 	
-	//static WebDriver driver;
+	 WebDriver driver;
 	
-	public HomePage()
+	public HomePage(WebDriver driver)
 	{
+		this.driver = driver;
 		PageFactory.initElements(driver,this);
 	}
 	
 
 	//Page Factory
 	@FindBy(xpath="//input[@id='gosuggest_inputSrc']")		//start location web element
-	WebElement from;
+	public WebElement from;
 	
 	@FindBy(id ="gosuggest_inputDest")			//destination location web element
 	WebElement destination;
@@ -121,6 +122,11 @@ public class HomePage extends Browser
 	public void enterDepartureDate(String startDate)
 	{
 		departureDate.sendKeys(startDate);
+	}
+	
+	public boolean fromDisplayed()
+	{
+		return from.isDisplayed();
 	}
 	
 

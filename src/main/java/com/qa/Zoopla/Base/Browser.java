@@ -36,9 +36,9 @@ public class Browser
 		return driver;
 	}
 
-	public static void tearDown()
-	{
-		driver.quit();
-	}
+//	public static void tearDown()
+//	{
+//		driver.quit();
+//	}
 
 }

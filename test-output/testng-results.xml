@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20794" started-at="2021-05-15T21:59:12Z" finished-at="2021-05-15T21:59:33Z">
+  <suite name="Suite" duration-ms="23642" started-at="2021-06-08T14:30:02Z" finished-at="2021-06-08T14:30:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20794" started-at="2021-05-15T21:59:12Z" finished-at="2021-05-15T21:59:33Z">
+    <test name="Test" duration-ms="23642" started-at="2021-06-08T14:30:02Z" finished-at="2021-06-08T14:30:26Z">
       <class name="com.qa.Zoopla.Test.HomePage_Test">
-        <test-method status="PASS" signature="startApp()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="startApp" is-config="true" duration-ms="9221" started-at="2021-05-15T23:59:12Z" finished-at="2021-05-15T23:59:22Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="startApp" is-config="true" duration-ms="8230" started-at="2021-06-08T16:30:02Z" finished-at="2021-06-08T16:30:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="studentBarIsNotSelectedValidation()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="studentBarIsNotSelectedValidation" duration-ms="50" started-at="2021-05-15T23:59:22Z" finished-at="2021-05-15T23:59:22Z">
+        <test-method status="PASS" signature="fromDisplayed()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="fromDisplayed" duration-ms="32" started-at="2021-06-08T16:30:10Z" finished-at="2021-06-08T16:30:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- studentBarIsNotSelectedValidation -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="1142" started-at="2021-05-15T23:59:22Z" finished-at="2021-05-15T23:59:23Z">
+        </test-method> <!-- fromDisplayed -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="2081" started-at="2021-06-08T16:30:10Z" finished-at="2021-06-08T16:30:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="startApp()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="startApp" is-config="true" duration-ms="9510" started-at="2021-05-15T23:59:23Z" finished-at="2021-05-15T23:59:32Z">
+        <test-method status="PASS" signature="startApp()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="startApp" is-config="true" duration-ms="12106" started-at="2021-06-08T16:30:12Z" finished-at="2021-06-08T16:30:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method status="PASS" signature="validateHomepageTitle()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="validateHomepageTitle" duration-ms="18" started-at="2021-05-15T23:59:32Z" finished-at="2021-05-15T23:59:32Z">
+        <test-method status="PASS" signature="validateHomepageTitle()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="validateHomepageTitle" duration-ms="26" started-at="2021-06-08T16:30:24Z" finished-at="2021-06-08T16:30:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHomepageTitle -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="834" started-at="2021-05-15T23:59:32Z" finished-at="2021-05-15T23:59:33Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Zoopla.Test.HomePage_Test@6a4f787b]" name="closeBrowser" is-config="true" duration-ms="1152" started-at="2021-06-08T16:30:24Z" finished-at="2021-06-08T16:30:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -1,6 +1,7 @@
 package com.qa.Zoopla.Test;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -11,8 +12,8 @@ import com.qa.Zoopla.Pages.HomePage;
 
 public class HomePage_Test extends Browser
 {
-	//WebDriver driver; 
-	HomePage hp;			//reference of HomePage class declared here to create object of Homepage, to call HomePage methods here
+	WebDriver driver; 
+	HomePage hp	;			//reference of HomePage class declared here to create object of Homepage, to call HomePage methods here
 	
 	
 	// to start application and browser before every test
@@ -20,7 +21,7 @@ public class HomePage_Test extends Browser
 	public void startApp()
 	{
 		driver = Browser.startApplication("chrome", "https://www.goibibo.com/flights/");
-		hp =new HomePage();				// HomePage object created here to call HomePage methods in every test
+		hp =new HomePage(driver);				// HomePage object created here to call HomePage methods in every test
 	}
 
 	
@@ -32,22 +33,33 @@ public class HomePage_Test extends Browser
 		
 		String actualTitle = hp.homepageTitle();
 		Assert.assertEquals(actualTitle, title,"Actual title didnot match expected title");
+		System.out.println(actualTitle);
 		
 	}
 	
-	@Test
+	//@Test
 	public void studentBarIsNotSelectedValidation()
 	{
 		boolean flag = hp.studentFareNotSelected(); // flag value should be false, as by default student bar should not be selected
 		Assert.assertEquals(flag, false);
+		
+		
 	}
 	
+	
+	@Test
+	public void fromDisplayed()
+	{
+		boolean a=  hp.fromDisplayed();
+		System.out.println(a);
+	}
 	
 	// to close browser after every test
 	@AfterMethod
 	public void closeBrowser()
 	{
-		Browser.tearDown();
+		//Browser.tearDown();
+		driver.quit();
 	}
 
 }

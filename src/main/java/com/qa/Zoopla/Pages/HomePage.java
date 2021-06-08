@@ -19,11 +19,11 @@ public class HomePage extends Browser
 	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver,this); //Initialising page factory web elements of current class with driver
 	}
 	
 
-	//Page Factory
+	//Page Factory 
 	@FindBy(xpath="//input[@id='gosuggest_inputSrc']")		//start location web element
 	public WebElement from;
 	
